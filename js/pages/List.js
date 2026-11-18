@@ -83,10 +83,6 @@ export default {
                             <p>{{ level.difficulty || 'Unrated' }}</p>
                         </li>
                         <li>
-                            <div class="type-title-sm">Points when completed</div>
-                            <p>{{ score(selected + 1, 100, 100) }}</p>
-                        </li>
-                        <li>
                             <div class="type-title-sm">Link</div>
                             <p>
                                 <a v-if="level.link" :href="level.link" target="_blank" class="level-link">Play on LLG</a>
@@ -101,22 +97,6 @@ export default {
                             </p>
                         </li>
                     </ul>
-                    <template v-if="level.records && level.records.length > 0">
-                        <h2>Records</h2>
-                        <table class="records">
-                            <tr v-for="record in level.records" class="record">
-                                <td class="percent">
-                                    <p>{{ record.percent }}%</p>
-                                </td>
-                                <td class="user">
-                                    <a :href="record.link" target="_blank" class="type-label-lg">{{ record.user }}</a>
-                                </td>
-                                <td class="mobile">
-                                    <img v-if="record.mobile" :src="\`./assets/phone-landscape\${store.dark ? '-dark' : ''}.svg\`" alt="Mobile">
-                                </td>
-                            </tr>
-                        </table>
-                    </template>
                 </div>
                 <div v-else class="level" style="height: 100%; justify-content: center; align-items: center;">
                     <p>(ノಠ益ಠ)ノ彡┻━┻</p>
