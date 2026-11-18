@@ -11,5 +11,54 @@
     "verification": "",
     "videoPartial": false,
     "videoOnYoutube": false,
-    "records": []
+    "records": [
+        {
+            "user": "www",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/af2c3961-3047-419d-986c-cb4f2dc0cc88",
+            "percent": 100,
+            "completedAt": "2026-02-20"
+        },
+        {
+            "user": "strenatos",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/af2c3961-3047-419d-986c-cb4f2dc0cc88",
+            "percent": 100,
+            "completedAt": "2026-02-26"
+        },
+        {
+            "user": "Yaboz505",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/af2c3961-3047-419d-986c-cb4f2dc0cc88",
+            "percent": 100,
+            "completedAt": "2026-03-02"
+        },
+        {
+            "user": "bbniedzwiedz",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/af2c3961-3047-419d-986c-cb4f2dc0cc88",
+            "percent": 100,
+            "completedAt": "2026-03-11"
+        },
+        {
+            "user": "H",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/af2c3961-3047-419d-986c-cb4f2dc0cc88",
+            "percent": 100,
+            "completedAt": "2026-03-12"
+        },
+        {
+            "user": "CCJCola",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/af2c3961-3047-419d-986c-cb4f2dc0cc88",
+            "percent": 100,
+            "completedAt": "2026-04-14"
+        },
+        {
+            "user": "Fun",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/af2c3961-3047-419d-986c-cb4f2dc0cc88",
+            "percent": 100,
+            "completedAt": "2026-05-24"
+        },
+        {
+            "user": "AnOrangeGamer",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/af2c3961-3047-419d-986c-cb4f2dc0cc88",
+            "percent": 100,
+            "completedAt": "2026-08-01"
+        }
+    ]
 }

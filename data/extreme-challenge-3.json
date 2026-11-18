@@ -11,5 +11,60 @@
     "verification": "https://youtu.be/VkMKag4xMkg?si=fA3mB4zFGYyoGTuO",
     "videoPartial": false,
     "videoOnYoutube": true,
-    "records": []
+    "records": [
+        {
+            "user": "Fun",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/594da7fa-e676-4e37-965c-4e2e87986b3c",
+            "percent": 100,
+            "completedAt": "2026-01-05"
+        },
+        {
+            "user": "Sdddg",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/594da7fa-e676-4e37-965c-4e2e87986b3c",
+            "percent": 100,
+            "completedAt": "2026-01-19"
+        },
+        {
+            "user": "CCJCola",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/594da7fa-e676-4e37-965c-4e2e87986b3c",
+            "percent": 100,
+            "completedAt": "2026-02-16"
+        },
+        {
+            "user": "H",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/594da7fa-e676-4e37-965c-4e2e87986b3c",
+            "percent": 100,
+            "completedAt": "2026-05-06"
+        },
+        {
+            "user": "misterkillington",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/594da7fa-e676-4e37-965c-4e2e87986b3c",
+            "percent": 100,
+            "completedAt": "2026-05-07"
+        },
+        {
+            "user": "ChessEagle95",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/594da7fa-e676-4e37-965c-4e2e87986b3c",
+            "percent": 100,
+            "completedAt": "2026-05-20"
+        },
+        {
+            "user": "Zxc_Vbnm",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/594da7fa-e676-4e37-965c-4e2e87986b3c",
+            "percent": 100,
+            "completedAt": "2026-06-17"
+        },
+        {
+            "user": "LLGgamer140",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/594da7fa-e676-4e37-965c-4e2e87986b3c",
+            "percent": 100,
+            "completedAt": "2026-09-01"
+        },
+        {
+            "user": "Hello12",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/594da7fa-e676-4e37-965c-4e2e87986b3c",
+            "percent": 100,
+            "completedAt": "2026-09-11"
+        }
+    ]
 }

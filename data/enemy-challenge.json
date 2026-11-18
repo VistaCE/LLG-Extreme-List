@@ -11,5 +11,24 @@
     "verification": "",
     "videoPartial": false,
     "videoOnYoutube": false,
-    "records": []
+    "records": [
+        {
+            "user": "strenatos",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/15b307cf-7b63-4a67-90dd-b2752f7bba73",
+            "percent": 100,
+            "completedAt": "2026-05-25"
+        },
+        {
+            "user": "Fun",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/15b307cf-7b63-4a67-90dd-b2752f7bba73",
+            "percent": 100,
+            "completedAt": "2026-05-31"
+        },
+        {
+            "user": "H",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/15b307cf-7b63-4a67-90dd-b2752f7bba73",
+            "percent": 100,
+            "completedAt": "2026-07-18"
+        }
+    ]
 }

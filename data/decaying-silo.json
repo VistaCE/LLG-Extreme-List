@@ -11,5 +11,72 @@
     "verification": "https://youtu.be/LbsifDCCLrw",
     "videoPartial": false,
     "videoOnYoutube": true,
-    "records": []
+    "records": [
+        {
+            "user": "strenatos",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/c6cc70f3-923f-46db-862d-042e489ba731",
+            "percent": 100,
+            "completedAt": "2026-02-14"
+        },
+        {
+            "user": "CCJCola",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/c6cc70f3-923f-46db-862d-042e489ba731",
+            "percent": 100,
+            "completedAt": "2026-02-16"
+        },
+        {
+            "user": "Sdddg",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/c6cc70f3-923f-46db-862d-042e489ba731",
+            "percent": 100,
+            "completedAt": "2026-02-20"
+        },
+        {
+            "user": "Epic_Hamsterr",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/c6cc70f3-923f-46db-862d-042e489ba731",
+            "percent": 100,
+            "completedAt": "2026-03-02"
+        },
+        {
+            "user": "H",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/c6cc70f3-923f-46db-862d-042e489ba731",
+            "percent": 100,
+            "completedAt": "2026-03-11"
+        },
+        {
+            "user": "gummyelephant1",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/c6cc70f3-923f-46db-862d-042e489ba731",
+            "percent": 100,
+            "completedAt": "2026-03-13"
+        },
+        {
+            "user": "ChessEagle95",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/c6cc70f3-923f-46db-862d-042e489ba731",
+            "percent": 100,
+            "completedAt": "2026-05-20"
+        },
+        {
+            "user": "killedragon",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/c6cc70f3-923f-46db-862d-042e489ba731",
+            "percent": 100,
+            "completedAt": "2026-06-01"
+        },
+        {
+            "user": "www",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/c6cc70f3-923f-46db-862d-042e489ba731",
+            "percent": 100,
+            "completedAt": "2026-06-27"
+        },
+        {
+            "user": "Fun",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/c6cc70f3-923f-46db-862d-042e489ba731",
+            "percent": 100,
+            "completedAt": "2026-06-30"
+        },
+        {
+            "user": "LLGgamer140",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/c6cc70f3-923f-46db-862d-042e489ba731",
+            "percent": 100,
+            "completedAt": "2026-09-08"
+        }
+    ]
 }

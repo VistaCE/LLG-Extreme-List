@@ -11,5 +11,18 @@
     "verification": "https://youtu.be/QTuQHLXk-kA",
     "videoPartial": false,
     "videoOnYoutube": true,
-    "records": []
+    "records": [
+        {
+            "user": "strenatos",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/87bdb8a1-5c07-4fea-a597-b9917a96fb88",
+            "percent": 100,
+            "completedAt": "2026-08-09"
+        },
+        {
+            "user": "www",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/87bdb8a1-5c07-4fea-a597-b9917a96fb88",
+            "percent": 100,
+            "completedAt": "2026-09-09"
+        }
+    ]
 }

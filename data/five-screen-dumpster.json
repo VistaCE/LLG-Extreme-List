@@ -11,5 +11,12 @@
     "verification": "https://youtu.be/l5tMUWtHNvU",
     "videoPartial": true,
     "videoOnYoutube": true,
-    "records": []
+    "records": [
+        {
+            "user": "www",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/4b54513c-933b-4754-90a7-6f5d347fb6f1",
+            "percent": 100,
+            "completedAt": "2026-07-10"
+        }
+    ]
 }

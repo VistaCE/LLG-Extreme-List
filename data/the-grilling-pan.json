@@ -12,5 +12,30 @@
     "verification": "",
     "videoPartial": false,
     "videoOnYoutube": false,
-    "records": []
+    "records": [
+        {
+            "user": "i173",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/c87adc51-4e85-4e68-84cb-ca8b723c49ce",
+            "percent": 100,
+            "completedAt": "2026-10-31"
+        },
+        {
+            "user": "Sdddg",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/c87adc51-4e85-4e68-84cb-ca8b723c49ce",
+            "percent": 100,
+            "completedAt": "2026-11-02"
+        },
+        {
+            "user": "H",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/c87adc51-4e85-4e68-84cb-ca8b723c49ce",
+            "percent": 100,
+            "completedAt": "2026-11-02"
+        },
+        {
+            "user": "LLGgamer140",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/c87adc51-4e85-4e68-84cb-ca8b723c49ce",
+            "percent": 100,
+            "completedAt": "2026-11-02"
+        }
+    ]
 }

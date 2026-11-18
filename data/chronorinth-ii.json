@@ -11,5 +11,36 @@
     "verification": "https://www.youtube.com/watch?v=4mHLSqtdMM4",
     "videoPartial": false,
     "videoOnYoutube": true,
-    "records": []
+    "records": [
+        {
+            "user": "strenatos",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/acfa8173-5aea-4b30-a14f-5ae409645d83",
+            "percent": 100,
+            "completedAt": "2026-06-09"
+        },
+        {
+            "user": "www",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/acfa8173-5aea-4b30-a14f-5ae409645d83",
+            "percent": 100,
+            "completedAt": "2026-06-19"
+        },
+        {
+            "user": "H",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/acfa8173-5aea-4b30-a14f-5ae409645d83",
+            "percent": 100,
+            "completedAt": "2026-08-17"
+        },
+        {
+            "user": "Sdddg",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/acfa8173-5aea-4b30-a14f-5ae409645d83",
+            "percent": 100,
+            "completedAt": "2026-09-01"
+        },
+        {
+            "user": "ChessEagle95",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/acfa8173-5aea-4b30-a14f-5ae409645d83",
+            "percent": 100,
+            "completedAt": "2026-09-04"
+        }
+    ]
 }

@@ -11,5 +11,36 @@
     "verification": "https://www.youtube.com/watch?v=JLr--BjYJLE",
     "videoPartial": false,
     "videoOnYoutube": true,
-    "records": []
+    "records": [
+        {
+            "user": "AnOrangeGamer",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/d2edfe34-c9c7-49a0-b693-98a515312344",
+            "percent": 100,
+            "completedAt": "2026-07-31"
+        },
+        {
+            "user": "Sdddg",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/d2edfe34-c9c7-49a0-b693-98a515312344",
+            "percent": 100,
+            "completedAt": "2026-08-06"
+        },
+        {
+            "user": "Fun",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/d2edfe34-c9c7-49a0-b693-98a515312344",
+            "percent": 100,
+            "completedAt": "2026-08-07"
+        },
+        {
+            "user": "www",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/d2edfe34-c9c7-49a0-b693-98a515312344",
+            "percent": 100,
+            "completedAt": "2026-08-07"
+        },
+        {
+            "user": "strenatos",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/d2edfe34-c9c7-49a0-b693-98a515312344",
+            "percent": 100,
+            "completedAt": "2026-08-08"
+        }
+    ]
 }

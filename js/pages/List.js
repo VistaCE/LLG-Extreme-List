@@ -97,6 +97,21 @@ export default {
                             </p>
                         </li>
                     </ul>
+                    <h2>Records ({{ level.records?.length || 0 }})</h2>
+                    <p v-if="!level.records || level.records.length === 0">No other completions on the LLG leaderboard yet.</p>
+                    <table v-else class="records">
+                        <tr v-for="record in level.records" class="record">
+                            <td class="user">
+                                <p class="type-label-lg">{{ record.user }}</p>
+                            </td>
+                            <td class="date">
+                                <p>{{ record.completedAt }}</p>
+                            </td>
+                            <td class="proof">
+                                <a :href="record.link" target="_blank" class="level-link">Leaderboard</a>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <div v-else class="level" style="height: 100%; justify-content: center; align-items: center;">
                     <p>(ノಠ益ಠ)ノ彡┻━┻</p>

@@ -11,5 +11,12 @@
     "verification": "",
     "videoPartial": false,
     "videoOnYoutube": false,
-    "records": []
+    "records": [
+        {
+            "user": "strenatos",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/dfa56b32-8d35-42d4-8a9a-24c6ba06c7ee",
+            "percent": 100,
+            "completedAt": "2026-09-09"
+        }
+    ]
 }

@@ -225,3 +225,18 @@ main.dark .meta .link {
 .page-list .meta strong {
     font-weight: 700;
 }
+
+/* Records from the LLG leaderboard */
+.page-list .level-container .level .records .user,
+.page-list .level-container .level .records .date,
+.page-list .level-container .level .records .proof {
+    padding-block: 0.75rem;
+}
+.page-list .level-container .level .records .date,
+.page-list .level-container .level .records .proof {
+    text-align: end;
+    white-space: nowrap;
+}
+.page-list .level-container .level .records tr:not(:last-child) td {
+    border-bottom: 1px solid var(--color-background-hover);
+}

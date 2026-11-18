@@ -11,5 +11,60 @@
     "verification": "https://drive.google.com/file/d/1c7_4bTyAdkMVb8BvxYHv6NQhsj2fgjW6/view?usp=sharing",
     "videoPartial": false,
     "videoOnYoutube": false,
-    "records": []
+    "records": [
+        {
+            "user": "www",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/4caf9e50-99c1-4469-addf-6ba3406ba750",
+            "percent": 100,
+            "completedAt": "2026-08-12"
+        },
+        {
+            "user": "dingus",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/4caf9e50-99c1-4469-addf-6ba3406ba750",
+            "percent": 100,
+            "completedAt": "2026-08-12"
+        },
+        {
+            "user": "strenatos",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/4caf9e50-99c1-4469-addf-6ba3406ba750",
+            "percent": 100,
+            "completedAt": "2026-08-13"
+        },
+        {
+            "user": "H",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/4caf9e50-99c1-4469-addf-6ba3406ba750",
+            "percent": 100,
+            "completedAt": "2026-09-09"
+        },
+        {
+            "user": "phantomshadow",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/4caf9e50-99c1-4469-addf-6ba3406ba750",
+            "percent": 100,
+            "completedAt": "2026-09-10"
+        },
+        {
+            "user": "CCJCola",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/4caf9e50-99c1-4469-addf-6ba3406ba750",
+            "percent": 100,
+            "completedAt": "2026-09-11"
+        },
+        {
+            "user": "LLGgamer140",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/4caf9e50-99c1-4469-addf-6ba3406ba750",
+            "percent": 100,
+            "completedAt": "2026-09-18"
+        },
+        {
+            "user": "i_boring570",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/4caf9e50-99c1-4469-addf-6ba3406ba750",
+            "percent": 100,
+            "completedAt": "2026-09-19"
+        },
+        {
+            "user": "irufuse",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/4caf9e50-99c1-4469-addf-6ba3406ba750",
+            "percent": 100,
+            "completedAt": "2026-10-04"
+        }
+    ]
 }

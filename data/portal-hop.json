@@ -11,5 +11,42 @@
     "verification": "https://youtu.be/qbDD4vlH3Y4?si=rhCEG2rM89WGSfDb",
     "videoPartial": false,
     "videoOnYoutube": true,
-    "records": []
+    "records": [
+        {
+            "user": "ChessEagle95",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/7c94f39f-3da4-40f2-8bef-53f70895286e",
+            "percent": 100,
+            "completedAt": "2026-07-11"
+        },
+        {
+            "user": "H",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/7c94f39f-3da4-40f2-8bef-53f70895286e",
+            "percent": 100,
+            "completedAt": "2026-07-11"
+        },
+        {
+            "user": "www",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/7c94f39f-3da4-40f2-8bef-53f70895286e",
+            "percent": 100,
+            "completedAt": "2026-07-12"
+        },
+        {
+            "user": "strenatos",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/7c94f39f-3da4-40f2-8bef-53f70895286e",
+            "percent": 100,
+            "completedAt": "2026-07-12"
+        },
+        {
+            "user": "Sdddg",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/7c94f39f-3da4-40f2-8bef-53f70895286e",
+            "percent": 100,
+            "completedAt": "2026-08-06"
+        },
+        {
+            "user": "LLGgamer140",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/7c94f39f-3da4-40f2-8bef-53f70895286e",
+            "percent": 100,
+            "completedAt": "2026-11-14"
+        }
+    ]
 }

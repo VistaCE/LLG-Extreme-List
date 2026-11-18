@@ -11,5 +11,30 @@
     "verification": "https://youtu.be/ySCS8q92gxo?si=v36CYWf80B86KvIv",
     "videoPartial": false,
     "videoOnYoutube": true,
-    "records": []
+    "records": [
+        {
+            "user": "ChessEagle95",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/4d844317-80ec-4163-8b33-d8af584d89f2",
+            "percent": 100,
+            "completedAt": "2026-05-19"
+        },
+        {
+            "user": "Fun",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/4d844317-80ec-4163-8b33-d8af584d89f2",
+            "percent": 100,
+            "completedAt": "2026-06-02"
+        },
+        {
+            "user": "www",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/4d844317-80ec-4163-8b33-d8af584d89f2",
+            "percent": 100,
+            "completedAt": "2026-07-04"
+        },
+        {
+            "user": "strenatos",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/4d844317-80ec-4163-8b33-d8af584d89f2",
+            "percent": 100,
+            "completedAt": "2026-08-08"
+        }
+    ]
 }

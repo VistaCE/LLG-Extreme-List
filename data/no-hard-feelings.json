@@ -12,5 +12,54 @@
     "verification": "https://youtu.be/Dy5kRgEsLbs",
     "videoPartial": false,
     "videoOnYoutube": true,
-    "records": []
+    "records": [
+        {
+            "user": "strenatos",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/8069b893-ad22-41d3-adbb-01382f5696d3",
+            "percent": 100,
+            "completedAt": "2026-04-03"
+        },
+        {
+            "user": "CCJCola",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/8069b893-ad22-41d3-adbb-01382f5696d3",
+            "percent": 100,
+            "completedAt": "2026-04-07"
+        },
+        {
+            "user": "H",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/8069b893-ad22-41d3-adbb-01382f5696d3",
+            "percent": 100,
+            "completedAt": "2026-05-09"
+        },
+        {
+            "user": "Eternity",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/8069b893-ad22-41d3-adbb-01382f5696d3",
+            "percent": 100,
+            "completedAt": "2026-06-03"
+        },
+        {
+            "user": "Fun",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/8069b893-ad22-41d3-adbb-01382f5696d3",
+            "percent": 100,
+            "completedAt": "2026-06-03"
+        },
+        {
+            "user": "ChessEagle95",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/8069b893-ad22-41d3-adbb-01382f5696d3",
+            "percent": 100,
+            "completedAt": "2026-06-14"
+        },
+        {
+            "user": "Sdddg",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/8069b893-ad22-41d3-adbb-01382f5696d3",
+            "percent": 100,
+            "completedAt": "2026-08-13"
+        },
+        {
+            "user": "LLGgamer140",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/8069b893-ad22-41d3-adbb-01382f5696d3",
+            "percent": 100,
+            "completedAt": "2026-11-09"
+        }
+    ]
 }

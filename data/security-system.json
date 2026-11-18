@@ -11,5 +11,36 @@
     "verification": "https://www.youtube.com/watch?v=7BF1p6la7dI",
     "videoPartial": false,
     "videoOnYoutube": true,
-    "records": []
+    "records": [
+        {
+            "user": "www",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/68bacb2f-cf58-4fb1-a530-d57d5b31f503",
+            "percent": 100,
+            "completedAt": "2025-12-29"
+        },
+        {
+            "user": "strenatos",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/68bacb2f-cf58-4fb1-a530-d57d5b31f503",
+            "percent": 100,
+            "completedAt": "2026-01-01"
+        },
+        {
+            "user": "Sdddg",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/68bacb2f-cf58-4fb1-a530-d57d5b31f503",
+            "percent": 100,
+            "completedAt": "2026-01-19"
+        },
+        {
+            "user": "Fun",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/68bacb2f-cf58-4fb1-a530-d57d5b31f503",
+            "percent": 100,
+            "completedAt": "2026-06-30"
+        },
+        {
+            "user": "H",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/68bacb2f-cf58-4fb1-a530-d57d5b31f503",
+            "percent": 100,
+            "completedAt": "2026-07-09"
+        }
+    ]
 }

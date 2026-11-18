@@ -11,5 +11,54 @@
     "verification": "https://youtu.be/aodFT0ja09M?si=qH75OxffhGiVHNrx",
     "videoPartial": false,
     "videoOnYoutube": true,
-    "records": []
+    "records": [
+        {
+            "user": "ashfalcons44",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/da515e76-0ccc-47c8-b884-ee78eb241f64",
+            "percent": 100,
+            "completedAt": "2026-01-17"
+        },
+        {
+            "user": "strenatos",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/da515e76-0ccc-47c8-b884-ee78eb241f64",
+            "percent": 100,
+            "completedAt": "2026-01-28"
+        },
+        {
+            "user": "AnOrangeGamer",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/da515e76-0ccc-47c8-b884-ee78eb241f64",
+            "percent": 100,
+            "completedAt": "2026-03-18"
+        },
+        {
+            "user": "gummyelephant1",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/da515e76-0ccc-47c8-b884-ee78eb241f64",
+            "percent": 100,
+            "completedAt": "2026-03-19"
+        },
+        {
+            "user": "CCJCola",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/da515e76-0ccc-47c8-b884-ee78eb241f64",
+            "percent": 100,
+            "completedAt": "2026-07-12"
+        },
+        {
+            "user": "Fun",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/da515e76-0ccc-47c8-b884-ee78eb241f64",
+            "percent": 100,
+            "completedAt": "2026-07-16"
+        },
+        {
+            "user": "H",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/da515e76-0ccc-47c8-b884-ee78eb241f64",
+            "percent": 100,
+            "completedAt": "2026-07-23"
+        },
+        {
+            "user": "Hello12",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/da515e76-0ccc-47c8-b884-ee78eb241f64",
+            "percent": 100,
+            "completedAt": "2026-09-11"
+        }
+    ]
 }
