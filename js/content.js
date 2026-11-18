@@ -3,7 +3,7 @@ import { round, score } from './score.js';
 /**
  * Path to directory containing `_list.json` and all levels
  */
-const dir = '/data';
+const dir = './data';
 
 export async function fetchList() {
     const listResult = await fetch(`${dir}/_list.json`);
@@ -58,6 +58,7 @@ export async function fetchLeaderboard() {
         }
 
         // Verification
+        if (!level.verifier) return;
         const verifier = Object.keys(scoreMap).find(
             (u) => u.toLowerCase() === level.verifier.toLowerCase(),
         ) || level.verifier;
@@ -70,9 +71,28 @@ export async function fetchLeaderboard() {
         verified.push({
             rank: rank + 1,
             level: level.name,
-            score: score(rank + 1, 100, level.percentToQualify),
-            link: level.verification,
+            score: score(rank + 1, 100, 100),
+            link: level.verification || level.link,
         });
+
+        // First victor counts as a completion (unless they also verified it)
+        const fv = (level.firstVictor || '').trim();
+        if (fv && fv.toLowerCase() !== (level.verifier || '').toLowerCase()) {
+            const victor = Object.keys(scoreMap).find(
+                (u) => u.toLowerCase() === fv.toLowerCase(),
+            ) || fv;
+            scoreMap[victor] ??= {
+                verified: [],
+                completed: [],
+                progressed: [],
+            };
+            scoreMap[victor].completed.push({
+                rank: rank + 1,
+                level: level.name,
+                score: score(rank + 1, 100, 100),
+                link: level.link,
+            });
+        }
 
         // Records
         level.records.forEach((record) => {
@@ -89,7 +109,7 @@ export async function fetchLeaderboard() {
                 completed.push({
                     rank: rank + 1,
                     level: level.name,
-                    score: score(rank + 1, 100, level.percentToQualify),
+                    score: score(rank + 1, 100, 100),
                     link: record.link,
                 });
                 return;
@@ -99,7 +119,7 @@ export async function fetchLeaderboard() {
                 rank: rank + 1,
                 level: level.name,
                 percent: record.percent,
-                score: score(rank + 1, record.percent, level.percentToQualify),
+                score: score(rank + 1, record.percent, 100),
                 link: record.link,
             });
         });

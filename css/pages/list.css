@@ -126,3 +126,102 @@
 .page-list .meta .editors li a:hover {
     text-decoration: underline;
 }
+
+/* ---------- HLLL additions ---------- */
+.page-list .list .level button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+}
+.page-list .level-container .level .level-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+}
+.page-list .level-container .level .video-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--color-background-hover);
+    text-align: center;
+    padding: 1rem;
+}
+.page-list .level-container .level .stats {
+    flex-wrap: wrap;
+}
+.page-list .level-container .level .stats li {
+    min-width: 7rem;
+}
+.page-list .level-link {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+main.dark .level-link {
+    color: #8c9eff;
+}
+
+/* Video links: white = YouTube, red = not on YouTube (same as the spreadsheet) */
+.video-link {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.5rem;
+    background-color: #1f1f1f;
+    color: #ffffff;
+}
+.video-link.not-youtube {
+    color: #ff4d4d;
+}
+a.video-link:hover {
+    text-decoration: underline;
+}
+
+/* Labels */
+.label-dot {
+    flex-shrink: 0;
+    display: inline-block;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.35);
+}
+.label-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #000;
+}
+.label-dot.label-green, .label-badge.label-green { background-color: #00ff00; }
+.label-dot.label-yellow, .label-badge.label-yellow { background-color: #ffff00; }
+.label-dot.label-red, .label-badge.label-red { background-color: #ff0000; color: #fff; }
+.label-dot.label-purple, .label-badge.label-purple { background-color: #ff00ff; color: #fff; }
+.label-dot.label-cyan, .label-badge.label-cyan { background-color: #00ffff; }
+
+.page-list .meta .labels {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+.page-list .meta .labels li {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+}
+.page-list .meta .link {
+    color: var(--color-primary);
+    text-decoration: underline;
+    overflow-wrap: anywhere;
+}
+main.dark .meta .link {
+    color: #8c9eff;
+}
+.page-list .meta strong {
+    font-weight: 700;
+}
