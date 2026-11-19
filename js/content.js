@@ -5,6 +5,12 @@ import { round, score } from './score.js';
  */
 const dir = './data';
 
+/**
+ * Players left off the leaderboard. Their verifications, first victories,
+ * records and levels still show on the list as normal.
+ */
+const hiddenFromLeaderboard = ['AnOrangeGamer'];
+
 export async function fetchList() {
     const listResult = await fetch(`${dir}/_list.json`);
     try {
@@ -140,5 +146,8 @@ export async function fetchLeaderboard() {
     });
 
     // Sort by total score
-    return [res.sort((a, b) => b.total - a.total), errs];
+    const hidden = hiddenFromLeaderboard.map((u) => u.toLowerCase());
+    const shown = res.filter((e) => !hidden.includes(e.user.toLowerCase()));
+
+    return [shown.sort((a, b) => b.total - a.total), errs];
 }
