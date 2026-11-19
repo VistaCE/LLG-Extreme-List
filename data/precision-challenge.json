@@ -14,12 +14,6 @@
     "videoOnYoutube": false,
     "records": [
         {
-            "user": "durdurulamazabi",
-            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/4f8958fd-4cb1-4f6e-b34c-520ddd287b34",
-            "percent": 100,
-            "completedAt": "2026-08-31"
-        },
-        {
             "user": "www",
             "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/4f8958fd-4cb1-4f6e-b34c-520ddd287b34",
             "percent": 100,
@@ -50,7 +44,7 @@
             "completedAt": "2026-09-12"
         },
         {
-            "user": "bbniedzwiedz",
+            "user": "BBniedzwiedz",
             "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/4f8958fd-4cb1-4f6e-b34c-520ddd287b34",
             "percent": 100,
             "completedAt": "2026-09-13"
@@ -62,7 +56,7 @@
             "completedAt": "2026-09-13"
         },
         {
-            "user": "strenatos",
+            "user": "Strenatos",
             "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/4f8958fd-4cb1-4f6e-b34c-520ddd287b34",
             "percent": 100,
             "completedAt": "2026-09-15"
