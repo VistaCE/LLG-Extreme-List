@@ -11,44 +11,21 @@ const scale = 3;
  * @returns {Number}
  */
 export function score(rank, percent, minPercent) {
-    if (rank > 75 && percent < 100) {
-        return 0;
-    }
-
-    // Older formula
-    /*
-    let score = (100 / Math.sqrt((rank - 1) / 50 + 0.444444) - 50) *
-        ((percent - (minPercent - 1)) / (100 - (minPercent - 1)));
-    */
-    // Old formula
-    /*
-    let score = (-24.9975*Math.pow(rank-1, 0.4) + 200) *
-        ((percent - (minPercent - 1)) / (100 - (minPercent - 1)));
-
-    score = Math.max(0, score);
-
-    if (percent != 100) {
-        return round(score - score / 3);
-    }
-    */
-    // Previous formula (added by XDtoMe)
-    /*
-    let score = (500*Math.pow(0.95, rank-1))
-    */
-
-    // Only the top 150 levels give points
+    // If ranked outside top 150, give 0 points
     if (rank > 150) {
         return 0;
     }
 
-    // Current formula: same shape as XDtoMe's, but 0.96 instead of 0.95 so
-    // points taper off slower. #1 = 500, #150 = ~1.14 (always at least 1).
-    let score = 500 * Math.pow(0.96, rank - 1);
+    // Depreciation factor changed to 0.96 from 0.95 by vista, so points taper off slower
+    // #1 = 500, #150 = 1.14
+    // Value of score is multiplied by 100 because I'm too lazy to actually make round() do 2 decimal places - XDtoMe
+    let score = 50000 * Math.pow(0.96, rank - 1);
 
     // Rounded down to a whole number
-    return Math.max(Math.floor(score), 1);
+    return Math.max(Math.floor(score)/100, 1);
 }
 
+// Currently unused; I'm kinda dumb right now...
 export function round(num) {
     if (!('' + num).includes('e')) {
         return +(Math.round(num + 'e+' + scale) + 'e-' + scale);
