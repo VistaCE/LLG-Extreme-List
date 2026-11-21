@@ -10,8 +10,8 @@ export function embed(video) {
 }
 
 export function localize(num) {
-    // Points are whole numbers, so no decimals
-    return num.toLocaleString(undefined, { maximumFractionDigits: 0 });
+    // Points are not rounded: show every decimal
+    return num.toLocaleString(undefined, { maximumFractionDigits: 20 });
 }
 
 export function getThumbnailFromId(id) {

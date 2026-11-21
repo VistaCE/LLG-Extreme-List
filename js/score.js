@@ -17,12 +17,8 @@ export function score(rank, percent, minPercent) {
     }
 
     // Depreciation factor changed to 0.96 from 0.95 by vista, so points taper off slower
-    // #1 = 500, #150 = 1.14
-    // Value of score is multiplied by 100 because I'm too lazy to actually make round() do 2 decimal places - XDtoMe
-    let score = 50000 * Math.pow(0.96, rank - 1);
-
-    // Minimum of 1 point exists even though the case doesn't...
-    return Math.max(round(score), 1);
+    // #1 = 500, #150 = ~1.14. Not rounded at all.
+    return 500 * Math.pow(0.96, rank - 1);
 }
 
 // Rounds the score down to 2 decimal places

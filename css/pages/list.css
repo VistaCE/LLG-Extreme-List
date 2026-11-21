@@ -240,3 +240,12 @@ main.dark .meta .link {
 .page-list .level-container .level .records tr:not(:last-child) td {
     border-bottom: 1px solid var(--color-background-hover);
 }
+
+/* Legacy levels (past #150): number stays, shown in grey */
+.page-list .list .rank .legacy-rank {
+    color: #9e9e9e;
+}
+main.dark .page-list .list .rank .legacy-rank,
+.page-list.dark .list .rank .legacy-rank {
+    color: #6f6f6f;
+}

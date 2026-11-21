@@ -49,8 +49,7 @@ export default {
                 <table class="list" v-if="list">
                     <tr v-for="([level, err], i) in list">
                         <td class="rank">
-                            <p v-if="i + 1 <= 150" class="type-label-lg">#{{ i + 1 }}</p>
-                            <p v-else class="type-label-lg">Legacy</p>
+                            <p class="type-label-lg" :class="{ 'legacy-rank': i + 1 > 150 }" :title="i + 1 > 150 ? 'Legacy (past #150, gives no points)' : null">#{{ i + 1 }}</p>
                         </td>
                         <td class="level" :class="{ 'active': selected == i, 'error': !level }">
                             <button @click="selected = i">
@@ -86,7 +85,7 @@ export default {
                         <li>
                             <div class="type-title-sm">Points</div>
                             <p v-if="selected + 1 <= 150">{{ score(selected + 1, 100, 100) }}</p>
-                            <p v-else>0.00</p>
+                            <p v-else>0 (Legacy)</p>
                         </li>
                         <li>
                             <div class="type-title-sm">Link</div>
