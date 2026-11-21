@@ -106,7 +106,7 @@ export default {
                                 <p>{{ record.completedAt }}</p>
                             </td>
                             <td class="proof">
-                                <a :href="record.link" target="_blank" class="level-link">Leaderboard</a>
+                                <a :href="record.link" target="_blank" class="level-link">Link</a>
                             </td>
                         </tr>
                     </table>
