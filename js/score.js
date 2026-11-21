@@ -17,11 +17,11 @@ export function score(rank, percent, minPercent) {
     }
 
     // Depreciation factor changed to 0.96 from 0.95 by vista, so points taper off slower
-    // #1 = 500, #150 = ~1.14. Not rounded at all.
-    return 500 * Math.pow(0.96, rank - 1);
+    // #1 = 500, #150 = 1.14. Rounded to 2 decimal places.
+    return round(500 * Math.pow(0.96, rank - 1));
 }
 
-// Rounds the score down to 2 decimal places
+// Rounds to 2 decimal places (see `scale` above)
 export function round(num) {
     if (!('' + num).includes('e')) {
         return +(Math.round(num + 'e+' + scale) + 'e-' + scale);

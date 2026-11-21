@@ -1,4 +1,4 @@
-import { score } from './score.js';
+import { round, score } from './score.js';
 
 /**
  * Path to directory containing `_list.json` and all levels
@@ -140,7 +140,7 @@ export async function fetchLeaderboard() {
 
         return {
             user,
-            total, // not rounded
+            total: round(total), // 2 decimal places
             ...scores,
         };
     });
