@@ -12,5 +12,12 @@
     "verification": "",
     "videoPartial": false,
     "videoOnYoutube": false,
-    "records": []
+    "records": [
+        {
+            "user": "Strenatos",
+            "link": "",
+            "percent": 100,
+            "completedAt": "2026-07-03"
+        }
+    ]
 }
