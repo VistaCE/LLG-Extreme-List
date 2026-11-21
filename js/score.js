@@ -31,10 +31,21 @@ export function score(rank, percent, minPercent) {
         return round(score - score / 3);
     }
     */
-    // New formula (added by XDtoMe)
+    // Previous formula (added by XDtoMe)
+    /*
     let score = (500*Math.pow(0.95, rank-1))
+    */
 
-    return Math.max(round(score), 0);
+    // Only the top 150 levels give points
+    if (rank > 150) {
+        return 0;
+    }
+
+    // Current formula: same shape as XDtoMe's, but 0.96 instead of 0.95 so
+    // points taper off slower. #1 = 500, #150 = ~1.14 (always at least 1).
+    let score = 500 * Math.pow(0.96, rank - 1);
+
+    return Math.max(round(score), 1);
 }
 
 export function round(num) {
