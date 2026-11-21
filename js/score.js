@@ -15,12 +15,13 @@ export function score(rank, percent, minPercent) {
         return 0;
     }
 
-    // Old formula
+    // Older formula
     /*
     let score = (100 / Math.sqrt((rank - 1) / 50 + 0.444444) - 50) *
         ((percent - (minPercent - 1)) / (100 - (minPercent - 1)));
     */
-    // New formula
+    // Old formula
+    /*
     let score = (-24.9975*Math.pow(rank-1, 0.4) + 200) *
         ((percent - (minPercent - 1)) / (100 - (minPercent - 1)));
 
@@ -29,6 +30,9 @@ export function score(rank, percent, minPercent) {
     if (percent != 100) {
         return round(score - score / 3);
     }
+    */
+    // New formula (added by XDtoMe)
+    let score = (500*Math.pow(0.95, rank-1))
 
     return Math.max(round(score), 0);
 }
