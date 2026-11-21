@@ -45,7 +45,8 @@ export function score(rank, percent, minPercent) {
     // points taper off slower. #1 = 500, #150 = ~1.14 (always at least 1).
     let score = 500 * Math.pow(0.96, rank - 1);
 
-    return Math.max(round(score), 1);
+    // Rounded down to a whole number
+    return Math.max(Math.floor(score), 1);
 }
 
 export function round(num) {

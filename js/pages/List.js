@@ -49,7 +49,8 @@ export default {
                 <table class="list" v-if="list">
                     <tr v-for="([level, err], i) in list">
                         <td class="rank">
-                            <p class="type-label-lg">#{{ i + 1 }}</p>
+                            <p v-if="i + 1 <= 150" class="type-label-lg">#{{ i + 1 }}</p>
+                            <p v-else class="type-label-lg">Legacy</p>
                         </td>
                         <td class="level" :class="{ 'active': selected == i, 'error': !level }">
                             <button @click="selected = i">
@@ -91,13 +92,6 @@ export default {
                             <div class="type-title-sm">Link</div>
                             <p>
                                 <a v-if="level.link" :href="level.link" target="_blank" class="level-link">Play on LLG</a>
-                                <span v-else>None</span>
-                            </p>
-                        </li>
-                        <li>
-                            <div class="type-title-sm">Video</div>
-                            <p>
-                                <a v-if="level.verification" :href="level.verification" target="_blank" class="video-link" :class="{ 'not-youtube': !level.videoOnYoutube }">{{ videoLabel }}</a>
                                 <span v-else>None</span>
                             </p>
                         </li>
