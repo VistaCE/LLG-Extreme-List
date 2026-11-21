@@ -86,7 +86,7 @@ export default {
                         <li>
                             <div class="type-title-sm">Points</div>
                             <p v-if="selected + 1 <= 150">{{ score(selected + 1, 100, 100) }}</p>
-                            <p v-else>0 (past #150)</p>
+                            <p v-else>0.00</p>
                         </li>
                         <li>
                             <div class="type-title-sm">Link</div>
