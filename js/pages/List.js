@@ -18,19 +18,19 @@ const roleIconMap = {
 const labelMap = {
     green: {
         name: "Green",
-        text: "Will be moved up — likely harder than its current placement.",
+        text: "Likely to be moved up / deemed harder than its current placement.",
     },
     yellow: {
         name: "Yellow",
-        text: "Lacks opinions, or its true difficulty is unclear (confusing tech, unconventional gameplay, or just the weirdest thing in the world).",
+        text: "Lacks opinion / true difficulty is unclear (confusing tech, unconventional gameplay).",
     },
     red: {
         name: "Red",
-        text: "Will be moved down — likely easier than its current placement.",
+        text: "Likely to be moved down / deemed easier than its current placement.",
     },
     purple: {
-        name: "Purple",
-        text: "Impossible because of new physics.",
+        name: "Pink",
+        text: "???",
     },
     cyan: {
         name: "Cyan",
@@ -142,14 +142,11 @@ export default {
                         The "Verifiers" of OLD extremes that did not have the clear check, are the <strong>FIRST VICTORS</strong> of those certain levels <strong>UNLESS</strong> there is video proof of someone beating that level first.
                     </p>
                     <p>
-                        Only cheeses allowed are when you <strong>DO NOT</strong> incorporate lag jumping and/or duping.
-                    </p>
-                    <p>
-                        LLG Link: <a class="link" href="https://doodleslauncher.com/LawsonLevelsGallery" target="_blank">doodleslauncher.com/LawsonLevelsGallery</a>
+                        LLG Link: <a class="link" href="https://www.doodleslauncher.com/llg" target="_blank">https://www.doodleslauncher.com/llg</a>
                     </p>
                     <h3>Label Meanings</h3>
                     <p>
-                        Labels are used for recently placed levels or levels where the opinion of its difficulty has changed. It will take time for levels to be changed and moved around on the list. Each color means a specific thing.
+                        Labels are used for recently placed levels or levels where the opinion of its difficulty is unclear. It will take time for placements to be changed.
                     </p>
                     <ul class="labels">
                         <li v-for="(info, key) in labelMap">
