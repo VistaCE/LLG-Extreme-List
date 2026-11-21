@@ -12,5 +12,12 @@
     "verification": "",
     "videoPartial": false,
     "videoOnYoutube": false,
-    "records": []
+    "records": [
+        {
+            "user": "ashfalcons44",
+            "link": "https://youtu.be/BNnJdPrHXLQ",
+            "percent": 100,
+            "completedAt": "2026-11-21"
+        }
+    ]
 }
