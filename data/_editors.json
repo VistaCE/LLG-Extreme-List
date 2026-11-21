@@ -1,1 +1,37 @@
-[]
+[
+    {
+        "role": "owner",
+        "name": "Sdddg",
+        "link": "https://www.youtube.com/@Sdddg753"
+    },
+    {
+        "role": "admin",
+        "name": "H",
+        "link": "https://www.youtube.com/@Prometheus_Alt"
+    },
+    {
+        "role": "helper",
+        "name": "strenatos",
+        "link": "https://www.youtube.com/@StrenatosTheTuna"
+    },
+    {
+        "role": "helper",
+        "name": "Fun",
+        "link": "https://www.youtube.com/@fun-ch86"
+    },
+    {
+        "role": "helper",
+        "name": "gummyelephant1",
+        "link": "https://www.youtube.com/playlist?list=PLeIQvRKTCHxoT6szVkKzbjZoBGuITTpUf"
+    },
+    {
+        "role": "dev",
+        "name": "VistaCE",
+        "link": "https://www.youtube.com/playlist?list=PLeIQvRKTCHxoT6szVkKzbjZoBGuITTpUf"
+    },
+    {
+        "role": "dev",
+        "name": "XDtoMe",
+        "link": "https://www.youtube.com/@XDtoMe"
+    }
+]
