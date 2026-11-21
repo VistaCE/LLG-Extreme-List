@@ -1,7 +1,7 @@
 /**
  * Numbers of decimal digits to round to
  */
-const scale = 3;
+const scale = 2;
 
 /**
  * Calculate the score awarded when having a certain percentage on a list level
@@ -21,11 +21,11 @@ export function score(rank, percent, minPercent) {
     // Value of score is multiplied by 100 because I'm too lazy to actually make round() do 2 decimal places - XDtoMe
     let score = 50000 * Math.pow(0.96, rank - 1);
 
-    // Rounded down to a whole number
-    return Math.max(Math.floor(score)/100, 1);
+    // Minimum of 1 point exists even though the case doesn't...
+    return Math.max(round(score), 1);
 }
 
-// Currently unused; I'm kinda dumb right now...
+// Rounds the score down to 2 decimal places
 export function round(num) {
     if (!('' + num).includes('e')) {
         return +(Math.round(num + 'e+' + scale) + 'e-' + scale);
