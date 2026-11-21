@@ -152,13 +152,6 @@ export default {
                             <p><strong :class="'label-text-' + key">{{ info.name.toUpperCase() }}</strong> — {{ info.text }}</p>
                         </li>
                     </ul>
-                    <p>
-                        If a video is on YouTube, the link will be <strong class="video-link">WHITE</strong>.
-                        If a video is not on YouTube, the link will be <strong class="video-link not-youtube">RED</strong>.
-                    </p>
-                    <p>
-                        If a video shows only part of a level, it will be noted by saying "Video (partial)".
-                    </p>
                 </div>
             </div>
         </main>
