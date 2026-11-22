@@ -82,6 +82,8 @@ export async function fetchLeaderboard() {
         });
 
         // First victor counts as a completion (unless they also verified it)
+        // TESTING - need to see if i can get rid of points for first victor as i move it to records
+        /*
         const fv = (level.firstVictor || '').trim();
         if (fv && fv.toLowerCase() !== (level.verifier || '').toLowerCase()) {
             const victor = Object.keys(scoreMap).find(
@@ -99,6 +101,7 @@ export async function fetchLeaderboard() {
                 link: level.link,
             });
         }
+        */
 
         // Records
         level.records.forEach((record) => {
