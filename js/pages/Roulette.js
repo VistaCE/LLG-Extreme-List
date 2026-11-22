@@ -7,52 +7,72 @@ import Btn from '../components/Btn.js';
 /** Number of levels in one roulette run */
 const ROUNDS = 25;
 
-/** Only ranked levels can be rolled (legacy levels past #150 are left out) */
-const MAX_RANK = 150;
+/** Levels past this rank are Legacy (only rolled if the Legacy box is ticked) */
+const LEGACY_AFTER = 150;
 
 /**
- * How strongly the roulette sticks to the target difficulty.
- * Each level's chance is e^(-STEEPNESS * distance from the target), so a level
- * twice as far from the target is exponentially less likely to be picked.
+ * How strongly each pick sticks to that round's target difficulty.
+ * A level's chance is e^(-STEEPNESS * distance from the target), so levels
+ * further from the target are exponentially less likely.
  */
-const STEEPNESS = 8;
+const STEEPNESS = 14;
+
+/**
+ * How slowly the difficulty ramps up. 1 = steady climb; higher numbers keep
+ * the early rounds easy for longer and save the jump for the end.
+ */
+const RAMP = 1.6;
+
+/** Round 1 is always one of the easiest levels: the easiest 5% of the pool */
+const FIRST_ROUND_EASIEST = 0.05;
+
+/** A pick is never further than this from the round's target difficulty */
+const MAX_DISTANCE = 0.2;
 
 /** Bumped when the save format changes so old (percentage) saves are ignored */
 const SAVE_VERSION = 2;
 
 /**
- * Pick ROUNDS levels, easiest first. Round 1 aims at the easiest level in the
- * pool and the last round aims at the hardest, with every level's chance
- * dropping off exponentially the further it is from that round's target.
- * A level is never picked twice in one run.
+ * Pick ROUNDS levels, easiest first. Round 1 always comes from the easiest
+ * levels in the pool, and each round after aims a bit harder until the last
+ * round aims at the hardest level. A level is never picked twice in one run.
  */
 function rollLevels(pool) {
-    // pool is sorted hardest (#1) -> easiest
+    // pool is sorted hardest -> easiest
+    const n = pool.length;
+    // 0 = easiest level in the pool, 1 = hardest
+    const difficulty = new Map(
+        pool.map((lvl, idx) => [lvl, n === 1 ? 0 : 1 - idx / (n - 1)]),
+    );
     const remaining = [...pool];
     const picked = [];
-    const n = pool.length;
 
     for (let round = 0; round < Math.min(ROUNDS, n); round++) {
-        // 0 = easiest end of the pool, 1 = hardest end
-        const target = ROUNDS === 1 ? 0 : round / (ROUNDS - 1);
+        const target = ROUNDS === 1 ? 0 : Math.pow(round / (ROUNDS - 1), RAMP);
+        const dist = (lvl) => Math.abs(difficulty.get(lvl) - target);
 
-        const weights = remaining.map((lvl) => {
-            const idx = pool.indexOf(lvl); // 0 = hardest
-            const difficulty = n === 1 ? 0 : 1 - idx / (n - 1);
-            return Math.exp(-STEEPNESS * Math.abs(difficulty - target));
-        });
+        let candidates =
+            round === 0
+                ? remaining.filter((lvl) => difficulty.get(lvl) <= FIRST_ROUND_EASIEST)
+                : remaining.filter((lvl) => dist(lvl) <= MAX_DISTANCE);
+        if (candidates.length === 0) {
+            // Small pool: fall back to the closest few levels to the target
+            candidates = [...remaining].sort((a, b) => dist(a) - dist(b)).slice(0, 5);
+        }
 
+        const weights = candidates.map((lvl) => Math.exp(-STEEPNESS * dist(lvl)));
         const total = weights.reduce((a, b) => a + b, 0);
         let r = Math.random() * total;
-        let choice = remaining.length - 1;
+        let choice = candidates[candidates.length - 1];
         for (let i = 0; i < weights.length; i++) {
             r -= weights[i];
             if (r <= 0) {
-                choice = i;
+                choice = candidates[i];
                 break;
             }
         }
-        picked.push(remaining.splice(choice, 1)[0]);
+        remaining.splice(remaining.indexOf(choice), 1);
+        picked.push(choice);
     }
 
     return picked;
@@ -71,7 +91,7 @@ export default {
                 </p>
                 <p class="type-label-md">
                     Beat {{ rounds }} levels in a row. You have to beat each level fully to move on.
-                    It starts with easy levels and gets harder as you go.
+                    It always starts with an easy level and gets harder as you go.
                 </p>
                 <form class="options">
                     <div class="check">
@@ -81,6 +101,10 @@ export default {
                     <div class="check">
                         <input type="checkbox" id="extended" value="Extended List" v-model="useExtendedList">
                         <label for="extended">Extended List (#76–#150)</label>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" id="legacy" value="Legacy" v-model="useLegacy">
+                        <label for="legacy">Legacy Levels (#151+)</label>
                     </div>
                     <Btn @click.native.prevent="onStart">{{ levels.length === 0 ? 'Start' : 'Restart'}}</Btn>
                 </form>
@@ -106,7 +130,7 @@ export default {
                                 <div v-else class="no-thumb">No video</div>
                             </a>
                             <div class="meta">
-                                <p>#{{ level.rank }} · Round {{ i + 1 }}</p>
+                                <p>#{{ level.rank }}<span v-if="level.rank > 150"> (Legacy)</span> · Round {{ i + 1 }}</p>
                                 <h2>{{ level.name }}</h2>
                                 <p style="color: #00b54b; font-weight: 700">Beaten</p>
                             </div>
@@ -118,7 +142,7 @@ export default {
                                 <div v-else class="no-thumb">No video</div>
                             </a>
                             <div class="meta">
-                                <p>#{{ currentLevel.rank }} · Round {{ beaten + 1 }}</p>
+                                <p>#{{ currentLevel.rank }}<span v-if="currentLevel.rank > 150"> (Legacy)</span> · Round {{ beaten + 1 }}</p>
                                 <h2>{{ currentLevel.name }}</h2>
                                 <a v-if="currentLevel.link" :href="currentLevel.link" target="_blank" class="level-link">Play on LLG</a>
                             </div>
@@ -142,7 +166,7 @@ export default {
                                     <div v-else class="no-thumb">No video</div>
                                 </a>
                                 <div class="meta">
-                                    <p>#{{ level.rank }} · Round {{ beaten + i + 1 }}</p>
+                                    <p>#{{ level.rank }}<span v-if="level.rank > 150"> (Legacy)</span> · Round {{ beaten + i + 1 }}</p>
                                     <h2>{{ level.name }}</h2>
                                     <p style="color: #d50000; font-weight: 700">{{ i === 0 ? 'Gave up here' : 'Not reached' }}</p>
                                 </div>
@@ -168,6 +192,7 @@ export default {
         showRemaining: false,
         useMainList: true,
         useExtendedList: true,
+        useLegacy: false,
         toasts: [],
         fileInput: undefined,
         rounds: ROUNDS,
@@ -236,7 +261,7 @@ export default {
                 return;
             }
 
-            if (!this.useMainList && !this.useExtendedList) {
+            if (!this.useMainList && !this.useExtendedList && !this.useLegacy) {
                 this.showToast('Pick at least one list.');
                 return;
             }
@@ -260,13 +285,13 @@ export default {
                     name: lvl.name,
                     video: lvl.videoOnYoutube ? lvl.verification : '',
                     link: lvl.link || '',
-                }))
-                .slice(0, MAX_RANK);
+                }));
 
             // Pool stays sorted hardest -> easiest
             const pool = [];
             if (this.useMainList) pool.push(...fullListMapped.slice(0, 75));
-            if (this.useExtendedList) pool.push(...fullListMapped.slice(75));
+            if (this.useExtendedList) pool.push(...fullListMapped.slice(75, LEGACY_AFTER));
+            if (this.useLegacy) pool.push(...fullListMapped.slice(LEGACY_AFTER));
 
             this.levels = rollLevels(pool);
             this.beaten = 0;
