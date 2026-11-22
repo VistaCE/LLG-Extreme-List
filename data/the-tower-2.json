@@ -13,6 +13,12 @@
     "videoOnYoutube": false,
     "records": [
         {
+            "user": "H",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/e86c96e0-33bb-4c8b-9b80-fcf4e7c65cef",
+            "percent": 100,
+            "completedAt": "2025-05-30"
+        },
+        {
             "user": "PlatformerHERO",
             "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/e86c96e0-33bb-4c8b-9b80-fcf4e7c65cef",
             "percent": 100,

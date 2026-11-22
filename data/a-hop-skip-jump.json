@@ -13,6 +13,12 @@
     "videoOnYoutube": false,
     "records": [
         {
+            "user": "funnyname.txt",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/3361c6d6-b357-4ecb-adad-ac3ced19e7f2",
+            "percent": 100,
+            "completedAt": "2025-05-27"
+        },
+        {
             "user": "Fun",
             "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/3361c6d6-b357-4ecb-adad-ac3ced19e7f2",
             "percent": 100,

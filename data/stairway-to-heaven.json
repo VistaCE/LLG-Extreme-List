@@ -13,6 +13,12 @@
     "videoOnYoutube": true,
     "records": [
         {
+            "user": "dingus",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/68805ad2-f96d-46eb-ba53-f2e4e3c160c6",
+            "percent": 100,
+            "completedAt": "2025-07-28"
+        },
+        {
             "user": "Sdddg",
             "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/68805ad2-f96d-46eb-ba53-f2e4e3c160c6",
             "percent": 100,

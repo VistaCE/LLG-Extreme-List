@@ -13,6 +13,12 @@
     "videoOnYoutube": true,
     "records": [
         {
+            "user": "killedragon",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/19cbc3d7-3194-4209-9d13-dc0cf75a2836",
+            "percent": 100,
+            "completedAt": "2025-05-06"
+        },
+        {
             "user": "merio",
             "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/19cbc3d7-3194-4209-9d13-dc0cf75a2836",
             "percent": 100,

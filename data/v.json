@@ -14,6 +14,12 @@
     "videoOnYoutube": true,
     "records": [
         {
+            "user": "CCJCola",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/e9e1a56a-a8ba-49a1-a1d9-85c2fe2a317d",
+            "percent": 100,
+            "completedAt": "2026-05-12"
+        },
+        {
             "user": "AnOrangeGamer",
             "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/e9e1a56a-a8ba-49a1-a1d9-85c2fe2a317d",
             "percent": 100,
@@ -210,6 +216,12 @@
             "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/e9e1a56a-a8ba-49a1-a1d9-85c2fe2a317d",
             "percent": 100,
             "completedAt": "2026-11-04"
+        },
+        {
+            "user": "player123",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/e9e1a56a-a8ba-49a1-a1d9-85c2fe2a317d",
+            "percent": 100,
+            "completedAt": "2026-11-21"
         }
     ]
 }

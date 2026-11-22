@@ -13,6 +13,12 @@
     "videoOnYoutube": false,
     "records": [
         {
+            "user": "www",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/60ccc385-d648-4de2-bdb2-438581d2cb39",
+            "percent": 100,
+            "completedAt": "2026-05-16"
+        },
+        {
             "user": "Fun",
             "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/60ccc385-d648-4de2-bdb2-438581d2cb39",
             "percent": 100,

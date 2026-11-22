@@ -13,6 +13,12 @@
     "videoOnYoutube": true,
     "records": [
         {
+            "user": "www",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/916952a7-dccc-4be0-9415-a937df689b50",
+            "percent": 100,
+            "completedAt": "2025-11-22"
+        },
+        {
             "user": "Strenatos",
             "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/916952a7-dccc-4be0-9415-a937df689b50",
             "percent": 100,
@@ -35,6 +41,12 @@
             "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/916952a7-dccc-4be0-9415-a937df689b50",
             "percent": 100,
             "completedAt": "2026-07-22"
+        },
+        {
+            "user": "_averagetryhard.",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/916952a7-dccc-4be0-9415-a937df689b50",
+            "percent": 100,
+            "completedAt": "2026-11-22"
         }
     ]
 }

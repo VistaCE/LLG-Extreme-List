@@ -13,6 +13,12 @@
     "videoOnYoutube": true,
     "records": [
         {
+            "user": "Onyx",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/8afe60a1-bd6b-4aa8-8df0-62ac34995050",
+            "percent": 100,
+            "completedAt": "2025-07-30"
+        },
+        {
             "user": "H",
             "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/8afe60a1-bd6b-4aa8-8df0-62ac34995050",
             "percent": 100,

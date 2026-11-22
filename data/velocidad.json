@@ -13,6 +13,12 @@
     "videoOnYoutube": true,
     "records": [
         {
+            "user": "CapTheCat",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/3464a871-43e7-41ab-89fb-d96f7953a2d4",
+            "percent": 100,
+            "completedAt": ""
+        },
+        {
             "user": "Eternity",
             "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/3464a871-43e7-41ab-89fb-d96f7953a2d4",
             "percent": 100,

@@ -14,6 +14,12 @@
     "videoOnYoutube": false,
     "records": [
         {
+            "user": "Strenatos",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/c9470f18-5379-4a7f-a7ad-24082741822c",
+            "percent": 100,
+            "completedAt": "2025-06-17"
+        },
+        {
             "user": "KillerKactus",
             "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/c9470f18-5379-4a7f-a7ad-24082741822c",
             "percent": 100,

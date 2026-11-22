@@ -13,6 +13,12 @@
     "videoOnYoutube": true,
     "records": [
         {
+            "user": "H",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/4d844317-80ec-4163-8b33-d8af584d89f2",
+            "percent": 100,
+            "completedAt": "2026-05-03"
+        },
+        {
             "user": "ChessEagle95",
             "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/4d844317-80ec-4163-8b33-d8af584d89f2",
             "percent": 100,

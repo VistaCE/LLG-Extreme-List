@@ -13,6 +13,12 @@
     "videoOnYoutube": false,
     "records": [
         {
+            "user": "CCJCola",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/78283dc5-56f9-4ff7-ab0b-f70f618d2379",
+            "percent": 100,
+            "completedAt": "2025-10-03"
+        },
+        {
             "user": "AnOrangeGamer",
             "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/78283dc5-56f9-4ff7-ab0b-f70f618d2379",
             "percent": 100,

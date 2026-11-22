@@ -12,5 +12,12 @@
     "verification": "",
     "videoPartial": false,
     "videoOnYoutube": false,
-    "records": []
+    "records": [
+        {
+            "user": "0ffbrand",
+            "link": "",
+            "percent": 100,
+            "completedAt": ""
+        }
+    ]
 }

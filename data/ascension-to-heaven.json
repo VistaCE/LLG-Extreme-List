@@ -13,6 +13,12 @@
     "videoOnYoutube": false,
     "records": [
         {
+            "user": "Sdddg",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/af2c3961-3047-419d-986c-cb4f2dc0cc88",
+            "percent": 100,
+            "completedAt": "2026-02-19"
+        },
+        {
             "user": "www",
             "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/af2c3961-3047-419d-986c-cb4f2dc0cc88",
             "percent": 100,

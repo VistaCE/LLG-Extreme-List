@@ -6,7 +6,7 @@ import { round, score } from './score.js';
 const dir = './data';
 
 /**
- * Players left off the leaderboard. Their verifications, first victories,
+ * Players left off the leaderboard. Their verifications,
  * records and levels still show on the list as normal.
  */
 const hiddenFromLeaderboard = ['AnOrangeGamer'];
@@ -80,25 +80,6 @@ export async function fetchLeaderboard() {
             score: score(rank + 1, 100, 100),
             link: level.verification || level.link,
         });
-
-        // First victor counts as a completion (unless they also verified it)
-        const fv = (level.firstVictor || '').trim();
-        if (fv && fv.toLowerCase() !== (level.verifier || '').toLowerCase()) {
-            const victor = Object.keys(scoreMap).find(
-                (u) => u.toLowerCase() === fv.toLowerCase(),
-            ) || fv;
-            scoreMap[victor] ??= {
-                verified: [],
-                completed: [],
-                progressed: [],
-            };
-            scoreMap[victor].completed.push({
-                rank: rank + 1,
-                level: level.name,
-                score: score(rank + 1, 100, 100),
-                link: level.link,
-            });
-        }
 
         // Records
         level.records.forEach((record) => {

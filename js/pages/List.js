@@ -68,7 +68,7 @@ export default {
                             {{ labelMap[level.label]?.name }} label
                         </span>
                     </div>
-                    <LevelAuthors :creators="level.creators" :verifier="level.verifier" :first-victor="level.firstVictor"></LevelAuthors>
+                    <LevelAuthors :creators="level.creators" :verifier="level.verifier"></LevelAuthors>
                     <iframe v-if="youtubeId" class="video" id="videoframe" :src="video" frameborder="0" allowfullscreen></iframe>
                     <div v-else-if="level.verification" class="video video-placeholder">
                         <p>This video is not on YouTube.</p>
@@ -106,7 +106,7 @@ export default {
                                 <p>{{ record.completedAt }}</p>
                             </td>
                             <td class="proof">
-                                <a :href="record.link" target="_blank" class="level-link">Link</a>
+                                <a v-if="record.link" :href="record.link" target="_blank" class="level-link">Link</a>
                             </td>
                         </tr>
                     </table>

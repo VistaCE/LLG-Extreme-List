@@ -14,6 +14,12 @@
     "videoOnYoutube": false,
     "records": [
         {
+            "user": "Eternity",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/f0644ffa-346d-4f3b-b2aa-b17b4285ac16",
+            "percent": 100,
+            "completedAt": "2025-06-01"
+        },
+        {
             "user": "www",
             "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/f0644ffa-346d-4f3b-b2aa-b17b4285ac16",
             "percent": 100,

@@ -13,6 +13,12 @@
     "videoOnYoutube": false,
     "records": [
         {
+            "user": "www",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/15b307cf-7b63-4a67-90dd-b2752f7bba73",
+            "percent": 100,
+            "completedAt": "2026-05-23"
+        },
+        {
             "user": "Strenatos",
             "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/15b307cf-7b63-4a67-90dd-b2752f7bba73",
             "percent": 100,

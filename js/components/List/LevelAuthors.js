@@ -8,10 +8,6 @@ export default {
             type: String,
             required: true,
         },
-        firstVictor: {
-            type: String,
-            default: '',
-        },
     },
     template: `
         <div class="level-authors">
@@ -26,10 +22,6 @@ export default {
             <div class="type-title-sm">Verifier</div>
             <p class="type-body">
                 <span>{{ verifier || 'Unknown' }}</span>
-            </p>
-            <div class="type-title-sm">First Victor</div>
-            <p class="type-body">
-                <span>{{ firstVictor || 'None yet' }}</span>
             </p>
         </div>
     `,

@@ -13,6 +13,12 @@
     "videoOnYoutube": true,
     "records": [
         {
+            "user": "0ffbrand",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/da515e76-0ccc-47c8-b884-ee78eb241f64",
+            "percent": 100,
+            "completedAt": "2026-01-11"
+        },
+        {
             "user": "ashfalcons44",
             "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/da515e76-0ccc-47c8-b884-ee78eb241f64",
             "percent": 100,

@@ -13,6 +13,12 @@
     "videoOnYoutube": true,
     "records": [
         {
+            "user": "merio",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/49af9a1d-d1a5-4055-9f94-01d19abca3ea",
+            "percent": 100,
+            "completedAt": "2025-05-24"
+        },
+        {
             "user": "Eternity",
             "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/49af9a1d-d1a5-4055-9f94-01d19abca3ea",
             "percent": 100,

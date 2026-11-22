@@ -13,6 +13,12 @@
     "videoOnYoutube": true,
     "records": [
         {
+            "user": "H",
+            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/9db12185-ee98-4b42-b2a9-51bb4e1645cc",
+            "percent": 100,
+            "completedAt": "2026-11-04"
+        },
+        {
             "user": "LLGgamer140",
             "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/9db12185-ee98-4b42-b2a9-51bb4e1645cc",
             "percent": 100,
