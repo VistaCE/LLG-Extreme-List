@@ -8,8 +8,8 @@
     "verifier": "ChessEagle95",
     "firstVictor": "Fun",
     "difficulty": "Tier X",
-    "verification": "https://youtu.be/l5tMUWtHNvU",
-    "videoPartial": true,
+    "verification": "https://youtu.be/I0n3NV1LXIk",
+    "videoPartial": false,
     "videoOnYoutube": true,
     "records": [
         {
@@ -23,6 +23,12 @@
             "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/4b54513c-933b-4754-90a7-6f5d347fb6f1",
             "percent": 100,
             "completedAt": "2026-07-10"
+        },
+        {
+            "user": "ashfalcons44",
+            "link": "https://youtu.be/I0n3NV1LXIk",
+            "percent": 100,
+            "completedAt": "2026-11-22"
         }
     ]
 }
