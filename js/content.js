@@ -105,19 +105,21 @@ export async function fetchLeaderboard() {
             const user = Object.keys(scoreMap).find(
                 (u) => u.toLowerCase() === record.user.toLowerCase(),
             ) || record.user;
-            scoreMap[user] ??= {
-                verified: [],
-                completed: [],
-                progressed: [],
-            };
-            const { completed, progressed } = scoreMap[user];
-            if (record.percent === 100) {
-                completed.push({
-                    rank: rank + 1,
-                    level: level.name,
-                    score: score(rank + 1, 100, 100),
-                    link: record.link,
-                });
+            if (user && user.toLowerCase() !== (level.firstVictor || '').toLowerCase()) {
+                scoreMap[user] ??= {
+                    verified: [],
+                    completed: [],
+                    progressed: [],
+                };
+                const { completed, progressed } = scoreMap[user];
+                if (record.percent === 100) {
+                    completed.push({
+                        rank: rank + 1,
+                        level: level.name,
+                        score: score(rank + 1, 100, 100),
+                        link: record.link,
+                    });
+            }
                 return;
             }
 
