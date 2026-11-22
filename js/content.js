@@ -92,12 +92,15 @@ export async function fetchLeaderboard() {
                 completed: [],
                 progressed: [],
             };
+            // Hopefully this removes duplicate first victor/main records points allocations for now, temporary fix before Vista actually makes it an either one gives you the points but not both, until I add first victor to main records for all of them, so that its not confusing
+            /*
             scoreMap[victor].completed.push({
                 rank: rank + 1,
                 level: level.name,
                 score: score(rank + 1, 100, 100),
                 link: level.link,
             });
+            */
         }
 
         // Records
