@@ -8,13 +8,13 @@
     "verifier": "ChessEagle95",
     "firstVictor": "Sdddg",
     "difficulty": "Tier IX",
-    "verification": "https://youtu.be/MPxMx-jRIYc?si=m9Yf5Mr5Zj9AQoqR",
+    "verification": "https://youtu.be/MPxMx-jRIYc",
     "videoPartial": false,
     "videoOnYoutube": true,
     "records": [
         {
             "user": "Sdddg",
-            "link": "https://nodejs-production-eeb9.up.railway.app/levelLeaderboard/f0baed1b-a544-4bcb-9a65-35a682dca7b3",
+            "link": "https://youtu.be/MPxMx-jRIYc",
             "percent": 100,
             "completedAt": "2026-09-16"
         }
